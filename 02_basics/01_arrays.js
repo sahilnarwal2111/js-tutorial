@@ -38,3 +38,4 @@ console.log(myn2);
 //very important to note the difference between slice and splice
 // slice -> not inlcude last index and original array is not affected
 // splice -> last indec is inlcuded and original is leftover of remaining element which are not in splice :) 
+
