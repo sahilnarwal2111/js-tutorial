@@ -9,7 +9,7 @@
 // Numbers can be without decimal or with it
 const id = Symbol('123')
 const anotherId = Symbol('123')
-console.log(id == anotherId);
+// console.log(id == anotherId);
 //BigInt
 const bigNumber = 2342489797979n
 //JS dynamically typed lang
@@ -32,9 +32,36 @@ const myFunction = function(){
     console.log("Hello world");
 }
 
-console.log(typeof bigNumber);
+// console.log(typeof bigNumber);
 
-console.log(typeof myFunction);
+// console.log(typeof myFunction);
 
 // Note - data type of all non primitive is funtion expect typeof function gives 'function object'
 
+//HW - Return type of all datatypes used in this video
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack(Primitive), Heap (Non - Primitive)
+
+let myYoutubename = "sahildotcom" // It will go in stack
+
+let anothername = myYoutubename
+
+anothername = "chaiaurcode"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    name:"sahil",
+    upi:"abc@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.name = "narwal"
+
+console.log(userOne.name);
+console.log(userTwo.name);
