@@ -8,14 +8,14 @@
 // console.log(balance.toString().length);
 // console.log(balance.toFixed(2)); //100.00
 
-// // const otherNumber = 23.8996
-// // const otherNumber = 123.8996
-// const otherNumber = 1123.8996
-// console.log(otherNumber.toPrecision(3));
+// const otherNumber = 23.8996
+// const otherNumber = 123.8996
+const otherNumber = 1123.8996
+console.log(otherNumber.toPrecision(3)); 
 
 // const hundreds = 1000000
-// console.log(hundreds.toLocaleString());
-// console.log(hundreds.toLocaleString('en-IN'));
+// console.log(hundreds.toLocaleString()); //1,000,000
+// console.log(hundreds.toLocaleString('en-IN')); 10,00,000
 
 //+++++++++++MATHS++++++++++++++++
 
@@ -28,8 +28,8 @@
 
 //Math.random
 
-console.log(Math.random()); // 0 to 1 values
-console.log(Math.floor((Math.random()*10)) + 1)
+// console.log(Math.random()); // 0 to 1 values
+// console.log(Math.floor((Math.random()*10)) + 1)
 
 const min = 10
 const max = 20

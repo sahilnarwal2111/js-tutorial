@@ -20,4 +20,5 @@ let isLoggedIn = false
 console.log(typeof "");
 console.log(typeof age);
 console.log(typeof null); //-> object
-console.log(typeof undefined); // -> type in JS
+console.log(typeof undefined); //undefined  -> type in JS 
+

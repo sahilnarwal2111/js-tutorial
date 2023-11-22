@@ -17,25 +17,25 @@ const myHeros =["shaktiman", "naagraj"]
 
 
 // //join
-// const newArr = myArr.join()
-// console.log(newArr);
-// console.log(typeof newArr);
+const newArr = myArr.join()
+console.log(newArr);
+console.log(typeof newArr); //string
 // // Join - It binds the array and convert it to string
 
 
 //slice , splice
 
-console.log("A ", myArr);
+// console.log("A ", myArr);
 
-const myn1 = myArr.slice(1,3)
-console.log(myn1);
-console.log("B ", myArr);
+// const myn1 = myArr.slice(1,3)
+// console.log(myn1);
+// console.log("B ", myArr);
 
-const myn2 = myArr.splice(1,3)
-console.log("C ", myArr)
-console.log(myn2);
+// const myn2 = myArr.splice(1,3)
+// console.log("C ", myArr)
+// console.log(myn2);
 
 //very important to note the difference between slice and splice
 // slice -> not inlcude last index and original array is not affected
-// splice -> last indec is inlcuded and original is leftover of remaining element which are not in splice :) 
+// splice -> last index is inlcuded and original is leftover of remaining element which are not in splice :) 
 

@@ -9,7 +9,7 @@
 // Numbers can be without decimal or with it
 const id = Symbol('123')
 const anotherId = Symbol('123')
-// console.log(id == anotherId);
+console.log(id == anotherId);
 //BigInt
 const bigNumber = 2342489797979n
 //JS dynamically typed lang

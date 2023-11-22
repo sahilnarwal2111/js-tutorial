@@ -18,6 +18,7 @@ let myCreatedDate1 = new Date("01-14-2023")
 
 
 let myTimeStamp = Date.now()
+//Its is used when we want to organise quizes etc.
 // console.log(myTimeStamp);
 // console.log(myCreatedDate.getTime());
 

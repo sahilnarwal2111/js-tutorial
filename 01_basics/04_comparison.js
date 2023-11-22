@@ -1,5 +1,7 @@
 console.log("2"> 1);
 console.log("02" > 1);
+console.log("" > 1);
+console.log("sahil" > 4);
 //typescript does not allow u to compare two diff data type
 
 console.log(null > 0);

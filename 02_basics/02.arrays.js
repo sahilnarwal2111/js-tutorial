@@ -6,7 +6,7 @@ const dc_heros = ["superman", "flash", "batman"]
 // console.log(marvel_heros);
 // console.log(marvel_heros[3][1]);
 
-//concats return array
+//concats return array //older method , can only concat 2 things
 // const allHeros =  marvel_heros.concat(dc_heros)
 // console.log(allHeros);
 
@@ -20,9 +20,9 @@ const real_another_array = another_array.flat(Infinity)
 console.log(real_another_array);
 
 
-console.log(Array.isArray("sahil"))
-console.log(Array.from("sahil"))
-console.log(Array.from({name:"sahil"})) // interesting
+console.log(Array.isArray("sahil")) // false
+console.log(Array.from("sahil")) // [ 's', 'a', 'h', 'i', 'l' ]
+console.log(Array.from({name:"sahil"})) // interesting - []
 
 let score1 = 100
 let score2 = 200
