@@ -6,7 +6,7 @@
 
 // iife use: to avoid pollution from global scope
 
-((name) => {     // unamed iife
+((name) => {     // unnamed iife
     console.log(`DB CONNECTED 2 ${name}`);
 })('sahil')
 

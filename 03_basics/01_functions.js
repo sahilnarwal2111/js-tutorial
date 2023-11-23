@@ -42,7 +42,7 @@ function loginUserMessage(username = "sam"){  //is function is called without an
     return `${username} just logged in `
 }
 // console.log(loginUserMessage("sahil"));
-// console.log(loginUserMessage()); //undefined just logged in
+// console.log(loginUserMessage()); //undefined just logged in if function dont have default parameter
 
 
 // function calculateCartPrice(num1){
@@ -52,7 +52,7 @@ function loginUserMessage(username = "sam"){  //is function is called without an
 // console.log(calculateCartPrice(2));
 // console.log(calculateCartPrice(200, 400, 500)); //-> 200 only
 
-// ... rest operator and spread operator
+// ...: rest operator and spread operator
 
 // function calculateCartPrice(...num1){
 //     return num1
@@ -60,10 +60,34 @@ function loginUserMessage(username = "sam"){  //is function is called without an
 
 // console.log(calculateCartPrice(200, 400, 500, 2000)); //-> [ 200, 400, 500, 2000 ]
 
+function sum(...theArgs) {
+    let total = 0;
+    for (const arg of theArgs) {
+      total += arg;
+    }
+    return total;
+  }
+  
+
 function calculateCartPrice(val1, val2, ...num1){
     return num1
 }
 // console.log(calculateCartPrice(200, 400, 500, 2000)); //-> [ 500, 2000 ]
+
+function myFun(a, b, ...manyMoreArgs) {
+    console.log("a", a);
+    console.log("b", b);
+    console.log("manyMoreArgs", manyMoreArgs);
+  }
+  
+  myFun("one", "two", "three", "four", "five", "six");
+  
+  // Console Output:
+  // a, one
+  // b, two
+  // manyMoreArgs, ["three", "four", "five", "six"]
+
+
 
 const user = {
     username: "hitesh",

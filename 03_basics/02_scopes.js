@@ -8,13 +8,13 @@
 //     console.log(website);
 
 //     two()
-//     // one() is called in outside two() is never executed bcpz of error in console.log(website) !
+//     // one() is called in outside two() is never executed bcoz of error in console.log(website) !
 
 // }
 
 // one()
 
-// if two() is not called just declares and one() is called in outside , two() nerver get executed
+// if two() is not called, and just declared and one() is called in outside , two() nerver get executed
 
 
 // +++++++++++++++++++ interesting ++++++++++++++++++++++++++

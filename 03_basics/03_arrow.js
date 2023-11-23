@@ -49,7 +49,7 @@ const chai = () => {
 }
 chai()
 
-// **** Myth - You can't use this in arrow functions. ********
+// ******** Myth - You can't use this in arrow functions. ********
 
 // +++ Arrow Function +++
 
