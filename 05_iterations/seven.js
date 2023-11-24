@@ -5,8 +5,8 @@ const myNumbers = [1,2,3,4,5,6,7,8,9,10]
 // const newNums =  myNumbers.map( (num) => num + 10)
 // console.log(newNums)
 
-// forEach, filter(call back with conditionn and it return also that) and map(i think funtion which return something): all these takes call back function
-
+// forEach, filter(call back with condition and it return also that) and map(i think funtion which return something): all these takes call back function
+// i think filter returns only after checking the condition
 //++++++++++ Chaining ++++++++++
 const newNums = myNumbers
         .map((num)=> num * 10)

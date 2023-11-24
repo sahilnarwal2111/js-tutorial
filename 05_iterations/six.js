@@ -5,6 +5,7 @@ const coding = ["js", "ruby", "python", "java", "cpp"]
 // })
 
 // console.log(values); //-> undefined
+// why undefined? -> forEach return void (I think so, may be I thinking wrong!)
 
 const myNums = [1,2,3,4,5,6,7,8,9,10]
 //filter also takes a call back function inside it

@@ -4,7 +4,7 @@ const myObject = {
     rb: 'ruby',
     swift: 'swift by apple'
 }
-// for in loop for arrays
+// for in loop for objects
 for (const key in myObject) {
     // console.log(key); // it will print key
     console.log(`${key} shortcut is for ${myObject[key]}`);

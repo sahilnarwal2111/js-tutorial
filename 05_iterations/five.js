@@ -4,6 +4,7 @@ const coding = ["js", "ruby", "python", "java", "cpp"]
 //     console.log(val);
 // } )
 // forEach takes a call back function , and call back function doesn't have name
+// also it has void return type - I'm just assuming
 
 // coding.forEach( (item)=>{
 //     console.log(item);
@@ -14,6 +15,7 @@ const coding = ["js", "ruby", "python", "java", "cpp"]
 // }
 
 // coding.forEach(printMe) // just give reference of function, don't execute it
+// i.e. forEach can accept either a call back funciton or a function's reference
 
 coding.forEach( (item, index, arr)=>{
     console.log(item, index, arr);

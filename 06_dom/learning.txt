@@ -1,0 +1,15 @@
+Difference between textContent, innerHTML and innerText
+
+
+<h1 id = "title" class="heading">DOM learning on Chai aur Code <span style="display: none;">test text</span></h1>
+const title = document.getElementById('title')
+
+
+-> textContent: it displays whole text whether hide by some dipslay or css property
+DOM learning on Chai aur Code test text
+
+-> innerText: it gives only text that is actually visible
+DOM learning on Chai aur Code
+
+-> title.innerHTML
+'DOM learning on Chai aur Code <span style="display: none;">test text</span>'
