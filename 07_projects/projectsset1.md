@@ -65,7 +65,18 @@ form.addEventListener('submit', function(e){
     results.innerHTML = `<span>${bmi}</span><br><p>${msg}</p>`
 
   }
-  
-
 })
+```
+
+## Project 3 solution
+```javascript
+const clock = document.getElementById('clock')
+// const clock = document.querySelector('#clock')
+
+// very important function, an important question in many interviews
+setInterval(function(){
+  let date = new Date()
+  // console.log(date.toLocaleTimeString())
+  clock.innerHTML = date.toLocaleTimeString()
+},1000) //1000 millisecond
 ```
