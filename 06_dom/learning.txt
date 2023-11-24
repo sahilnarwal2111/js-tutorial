@@ -9,7 +9,93 @@ const title = document.getElementById('title')
 DOM learning on Chai aur Code test text
 
 -> innerText: it gives only text that is actually visible
-DOM learning on Chai aur Code
+DOM learning on Chai aur Code 
 
 -> title.innerHTML
 'DOM learning on Chai aur Code <span style="display: none;">test text</span>'
+
+++++ by ClassName ++++
+document.getElementsByClassName('heading')
+HTMLCollection [h1#title.heading, title: h1#title.heading]
+
+++++ querySelector and querySelectorAll ++++
+document.querySelector('h2') -> It will select first h2 tag 
+//It will accept values like CSS
+document.querySelector('#title')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+document.querySelector('.heading')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+
+
+const tempLiList = document.querySelectorAll('li')
+NodeList is not an pure array, it does not have map in prototype which arrays do have
+
+
+Yeah there are ways to convery NodeList to array 
+but most of the time try to use foreach in NodeList
+
+we can not use functionality of map in NodeList for this we need to convert it into array
+then we can apply 
+Note : for loop works on HTMLCollection
+
+HTMLCollection is different from NodeList
+HTMLCollection does not have a any loop!
+
+const tempClassList =  document.getElementsByClassName('list-item')
+tempClassList
+>>> HTMLCollection(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+Array.from(tempClassList)
+>>> (4) [li.list-item, li.list-item, li.list-item, li.list-item]
+const myConvertedArray = Array.from(tempClassList)
+
+
+*************  RELATIONS ************
+const parent = document.querySelector('.parent')
+
+
+
+
+
+
+
+timeStamp : 1:16:00 hrs
+
+<div class="parent">   // this line break is also calculated in HTML
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+</div>
+console.log("NODES: ", parent.childNodes);
+>>> 9
+0: text
+1: div.day
+2: text
+3: div.day
+4: text
+5: div.day
+6: text
+7: div.day
+8: text
+
+
+<div class="parent">
+        <!-- this is a comment -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+</div>
+
+console.log("NODES: ", parent.childNodes);
+0: text
+1: comment
+2: text
+3: div.day
+4: text
+5: div.day
+6: text
+7: div.day
+8: text
+9: div.day
+10: text
