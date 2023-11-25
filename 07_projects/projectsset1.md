@@ -63,7 +63,6 @@ form.addEventListener('submit', function(e){
     else if(bmi>24.9) msg = "You are overweight"
     else msg = "You are healthy... Enjoy your life!"
     results.innerHTML = `<span>${bmi}</span><br><p>${msg}</p>`
-
   }
 })
 ```
