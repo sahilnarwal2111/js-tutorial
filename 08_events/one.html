@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Events</title>
+</head>
+<body style="background-color: #414141; color :aliceblue " >
+    <ul id = "images">
+        <li><img width="200px" id="mountain" src="https://media.istockphoto.com/id/1409931022/photo/man-in-yellow-jacket-sitting-on-a-suspension-bridge-over-a-lake-in-olpererhutte-austria.jpg?s=1024x1024&w=is&k=20&c=uKngVtusABYLawqb_vDxkJjX_kqI1-Rngx3djGo2hNo=" alt=""></li>
+        <li><img width="200px" id="mountain1" src="https://media.istockphoto.com/id/1496414074/photo/traveler-man-standing-on-the-crater-of-kawah-ijen-volcano-with-sunrise-sky-in-the-morning.jpg?b=1&s=612x612&w=0&k=20&c=qDOcXlo9sgSe_I9QnxXk7P46tRleZ49twt8431WiXhI=" alt=""></li>
+        <li><img width="200px" id="mountain2" src="https://media.istockphoto.com/id/1443409611/photo/man-on-stone-on-the-hill-and-beautiful-mountains-in-haze-at-colorful-sunset-in-autumn.jpg?b=1&s=612x612&w=0&k=20&c=reHq-c7BUpDsp5f-CG3IVi3NeOWwEZQS93O7Mrh-xIg=" alt=""></li>
+
+        <li><a id="google" href="https://google.com">Google</a></li>
+    </ul>
+</body>
+    <script>
+        // document.getElementById('mountain').onclick = function(){
+        //     alert('mountain clicked')
+        // }
+
+        //Following things of object needs to be studied
+        // type, timestamp, defaultPrevented
+        // target, toElement, srcElement, currentTarget
+        // clientX, clientY, screenX, screenY
+        // altkey, ctrlkey, shiftkey, keyCode
+
+        // document.getElementById('mountain').addEventListener('click', function(e){
+        //     console.log(e)
+        // })
+        
+        //Event Propagation : It has two context event bubbling and event capturing
+        // Event bubbling is mostly used in the market (false in addEventListener)
+        // But in some scenarios event capturing can also be needed
+
+        // console.log("hello")
+        // document.getElementById('outer').addEventListener('click', function(e){
+        //     console.log("clicked on outer")
+        // }, false) // by default as well
+
+        // document.getElementById('mountain').addEventListener('click', function(e){
+        //     console.log("mountain is clciked")
+        // })
+        //When photo is clicked two function become activate -> event propagation bubbling up
+    
+        // console.log("hello")
+        // document.getElementById('outer').addEventListener('click', function(e){
+        //     console.log("clicked on outer")
+        // }, true) // capuring mode
+
+        // document.getElementById('mountain').addEventListener('click', function(e){
+        //     console.log("mountain is clciked")
+        // })
+        //>>> clicked on outer
+        //>>> mountain is clciked
+        // It goes top -> bottom
+
+        //top bubbling 
+        // document.getElementById('outer').addEventListener('click', function(e){
+        //     console.log("clicked on outer")
+        // }) // capuring mode
+
+        // document.getElementById('mountain').addEventListener('click', function(e){
+        //     console.log("mountain is clciked")
+        //     e.stopPropagation()
+        // })
+        //>>> mountain is clciked
+
+        document.getElementById('google').addEventListener('click', (e)=>{
+            // e.preventDefault();
+            // What's diff?
+        })
+        
+        document.querySelector('#images').addEventListener('click', function(e){
+            // console.log(e.target.parentNode)
+            // let removeIt = e.target.parentNode
+            //Two ways
+            // removeIt.remove()
+            // removeIt.parentNode.removeChild(removeIt)
+
+            //Doing in good and accurate manner
+            // console.log(e.target.tagName)
+            if(e.target.tagName === 'IMG'){
+                console.log(e.target.tagName)
+                let removeIt = e.target.parentNode
+                removeIt.remove()
+            }
+        })
+
+
+    </script>
+</html>
+
+
+<!-- Time stamp 3:28:00 hrs
+    Avoid writing onClick in html
+    React scenario is different there we can 
+    but avoid in pure JS
+
+    Second approach
+
+
+-->

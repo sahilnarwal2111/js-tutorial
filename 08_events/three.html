@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <p>Chai aur code</p>
+        <button id = "start">Start</button>
+        <button id = "end">End</button>
+        <p id = "p"></p>
+    </div>
+</body>
+<script>
+    let func 
+    document.getElementById('start').addEventListener('click', (e)=>{
+        func = setInterval(function () {
+            const p = document.getElementById('p')
+            console.log("Hell0" + Date.now().toLocaleString())
+            p.innerHTML += `<h3>Hell0 + ${Date.now().toLocaleString()}</h3>`
+
+        }, 1000)
+    })
+    document.getElementById('end').addEventListener('click' , (e)=>{
+        clearInterval(func)
+    })
+</script>
+</html>

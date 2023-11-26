@@ -1,0 +1,3 @@
+JavaScript is synchronous language + single threaded
+
+
