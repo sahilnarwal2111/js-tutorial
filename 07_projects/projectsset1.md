@@ -276,6 +276,32 @@ function newGame(guess) {
 
 ```
 
+## Project - 5 solution
+
+```javascript
+console.log('Project 5');
+
+const insert = document.getElementById('insert')
+
+window.addEventListener('keydown',(e)=>{
+  insert.innerHTML = 
+  `
+  <table>
+  <tr>
+    <th>Key</th>
+    <th>Key Code</th>
+    <th>Key Name</th>
+  </tr>
+  <tr>
+    <td>${e.key === ' ' ? "Space" : e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+</table>
+  `
+})
+```
+
 
 ## Project - 6 solution
 ```javascript
@@ -292,16 +318,19 @@ function randomNumber() {
 
 let func;
 start.addEventListener('click', (e) => {
+  if(!func){
   func = setInterval(() => {
     let r = randomNumber();
     let g = randomNumber();
     let b = randomNumber();
     body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
   }, 1000);
+  }
 });
 
 stop.addEventListener('click', () => {
   clearInterval(func);
+  func = null
 });
 
 ```
